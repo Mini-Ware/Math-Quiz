@@ -4,7 +4,6 @@
 
 //Function declaration
 int generate();
-int mark();
 
 int main(int argc, char *argv[]){
 
