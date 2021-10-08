@@ -14,13 +14,13 @@ int main(int argc, char *argv[])
     srand(time(NULL));
     
     //Variable declaration
-    int ans, qn, score, timer, x, y, n;
+    int ans, score, timer, x, y, n;
     char op[] = "+-x/";
     timer = time(NULL);
 
     //Ask questions
     score = 0;
-    for (qn = 1; qn <= 20; qn++)
+    for (int qn = 1; qn <= 20; qn++)
     {
 
         x = generate(13);
@@ -28,10 +28,10 @@ int main(int argc, char *argv[])
         n = generate(4);
 
         //Ensure questions can be solved
-        y = y + 1;
+        y += 1;
         if (n == 3)
         {
-            x = x * y;
+            x *= y;
         }
 
         printf("%d) What is %d %c %d?\n", qn, x, op[n], y);
